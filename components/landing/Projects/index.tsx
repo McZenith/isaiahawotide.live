@@ -16,7 +16,7 @@ interface IUserRepo {
 const IndexPage = () => {
   const [userRepos, setUserRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, isError] = useState(false);
+  // const [error, isError] = useState(false);
   useEffect(() => {
     // get data from GitHub api
     fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated`)
@@ -41,10 +41,10 @@ const IndexPage = () => {
           resultData.splice(TOTAL_GITHUB_PROJECTS, resultData.length);
         setUserRepos(resultData);
         return setIsLoading(false);
-      })
-      .catch((error) => {
-        isError(true);
       });
+    // .catch((error) => {
+    //   isError(true);
+    // });
   }, []);
 
   if (!isLoading) {
