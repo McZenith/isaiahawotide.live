@@ -5,14 +5,6 @@ import forkIcon from '../../../assets/icons/fork.svg';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
 import { TOTAL_GITHUB_PROJECTS, GITHUB_USERNAME } from '../../../data/config';
 
-interface IUserRepo {
-  id: string | number | null | undefined;
-  html_url: string | undefined;
-  name: React.ReactNode;
-  description: React.ReactNode;
-  stargazers_count: React.ReactNode;
-  forks: React.ReactNode;
-}
 const IndexPage = () => {
   const [userRepos, setUserRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -25,32 +17,28 @@ const IndexPage = () => {
         if (resultData.message) throw new Error('Something went wrong');
         //Sort on total stars
         return resultData.sort(
-          (a: { stargazers_count: number }, b: { stargazers_count: number }) =>
-            b.stargazers_count - a.stargazers_count
+          (a, b) => b.stargazers_count - a.stargazers_count
         );
       })
       .then((resultData) => {
         if (resultData.message) throw new Error('Something went wrong');
         //Remove forked repositories
-        return resultData.filter(
-          (repo: { fork: boolean }) => repo.fork !== true
-        );
+        return resultData.filter((repo) => repo.fork !== true);
       })
       .then((resultData) => {
         if (resultData.length > TOTAL_GITHUB_PROJECTS)
           resultData.splice(TOTAL_GITHUB_PROJECTS, resultData.length);
         setUserRepos(resultData);
         return setIsLoading(false);
+      })
+      .catch((error) => {
+        isError(true);
       });
-    // .catch((error) => {
-    //   isError(true);
-    // });
   }, []);
 
   if (!isLoading) {
     if (userRepos) {
-      const repo: IUserRepo[] = userRepos;
-      return repo?.map((repo: IUserRepo) => {
+      return userRepos.map((repo) => {
         return (
           <Item
             key={repo.id}
