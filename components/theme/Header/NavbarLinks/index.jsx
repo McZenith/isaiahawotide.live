@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import { Wrapper } from './styles';
 
-export interface NavBarLinksProps {
-  desktop: Boolean;
-}
-
-const NavBarLinks: React.SFC<NavBarLinksProps> = ({ desktop }) => {
+const NavBarLinks = ({ desktop }) => {
   return (
     <Wrapper desktop={desktop}>
       <>
