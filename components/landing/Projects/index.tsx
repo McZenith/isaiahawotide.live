@@ -16,7 +16,7 @@ interface IUserRepo {
 const IndexPage = () => {
   const [userRepos, setUserRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  // const [error, isError] = useState(false);
+  const [error, isError] = useState(false);
   useEffect(() => {
     // get data from GitHub api
     fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated`)
