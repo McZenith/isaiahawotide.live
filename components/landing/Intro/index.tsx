@@ -17,7 +17,7 @@ export const Intro = () => (
           Contact me
         </Button>
         <Link href='https://drive.google.com/file/d/12sTq3W6j-Wy9KhtKxDLFwcy7vs_qZVZp/view?usp=sharing'>
-          <Button secondary={true} style={{ marginLeft: '0.5em' }}>
+          <Button style={{ marginLeft: '0.5em', background: '#001F3F' }}>
             Resume
           </Button>
         </Link>

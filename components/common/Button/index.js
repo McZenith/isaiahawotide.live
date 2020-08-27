@@ -22,10 +22,4 @@ export const Button = styled.button`
   &:disabled {
     background: gray;
   }
-
-  ${({ secondary: any }) =>
-    secondary &&
-    `
-		background: #001F3F;
-	`}
 `;
