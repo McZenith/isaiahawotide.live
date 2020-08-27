@@ -15,7 +15,7 @@ export interface ContactFormProps {
 
 const ContactForm: React.SFC<ContactFormProps> = ({
   setFieldValue,
-  isSubmitting,
+  isSubmitting = true,
   values,
   errors,
   touched,
