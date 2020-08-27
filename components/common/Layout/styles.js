@@ -11,7 +11,6 @@ export const Global = createGlobalStyle`
           src: local('Roboto'), local('Roboto-Regular'),
             url('./fonts/roboto-v18-latin-regular.eot?#iefix')
               format('embedded-opentype'),
-            url('./fonts/roboto-v18-latin-regular.ttf') format('truetype'),
             url('./fonts/roboto-v18-latin-regular.svg#Roboto') format('svg');
         }
 
@@ -24,7 +23,6 @@ export const Global = createGlobalStyle`
           src: local('Roboto Bold'), local('Roboto-Bold'),
             url('./fonts/roboto-v18-latin-700.eot?#iefix')
               format('embedded-opentype'),
-            url('./fonts/roboto-v18-latin-700.ttf') format('truetype'),
             url('./fonts/roboto-v18-latin-700.svg#Roboto') format('svg');
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
