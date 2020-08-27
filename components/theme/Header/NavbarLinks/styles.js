@@ -1,19 +1,12 @@
-import styled, { StyledFunction } from 'styled-components';
+import styled from 'styled-components';
 
-interface IProps {
-  desktop: Boolean;
-}
-type DefFunc = IProps & React.HTMLProps<HTMLInputElement>;
-
-const Div: StyledFunction<DefFunc> = styled.div;
-
-export const Wrapper = Div`
+export const Wrapper = styled.div`
   a {
     color: #6d6d6d;
     text-decoration: none;
   }
 
-  ${({ desktop }: IProps) =>
+  ${({ desktop }) =>
     desktop
       ? `
 			@media (max-width: 960px) {
