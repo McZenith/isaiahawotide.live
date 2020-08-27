@@ -78,7 +78,7 @@ export default class MyDocument extends Document {
               />
 
               <meta name='twitter:card' content='summary' />
-              <meta name='twitter:url' content='https://yourdomain.com' />
+              <meta name='twitter:url' content='https://isaiahawotide.live' />
               <meta name='twitter:title' content='Isaiah Awotide' />
               <meta
                 name='twitter:description'
@@ -86,17 +86,17 @@ export default class MyDocument extends Document {
               />
               <meta
                 name='twitter:image'
-                content='https://yourdomain.com/static/icons/android-chrome-192x192.png'
+                content='https://isaiahawotide.live/static/icons/android-chrome-192x192.png'
               />
-              <meta name='twitter:creator' content='@DavidWShadow' />
+              <meta name='twitter:creator' content='@McZenith' />
               <meta property='og:type' content='website' />
               <meta property='og:title' content='Isaiah Awotide' />
               <meta
                 property='og:description'
-                content='Best Isaiah Awotide in the world'
+                content='Isaiah Awotide to the world'
               />
               <meta property='og:site_name' content='Isaiah Awotide' />
-              <meta property='og:url' content='https://yourdomain.com' />
+              <meta property='og:url' content='https://isaiahawotide.live' />
               <meta
                 property='og:image'
                 content='https://isaiahawotide.live/static/icons/apple-touch-icon.png'
