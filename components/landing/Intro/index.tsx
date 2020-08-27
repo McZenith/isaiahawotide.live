@@ -16,7 +16,10 @@ export const Intro = () => (
         <Button as={AnchorLink} href='#contact'>
           Contact me
         </Button>
-        <Link href='https://drive.google.com/file/d/12sTq3W6j-Wy9KhtKxDLFwcy7vs_qZVZp/view?usp=sharing'>
+        <Link
+          href='https://drive.google.com/file/d/12sTq3W6j-Wy9KhtKxDLFwcy7vs_qZVZp/view?usp=sharing'
+          target='_blank'
+        >
           <Button style={{ marginLeft: '0.5em', background: '#001F3F' }}>
             Resume
           </Button>
