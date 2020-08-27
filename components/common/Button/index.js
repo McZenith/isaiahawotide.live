@@ -1,15 +1,6 @@
-import styled, { StyledFunction } from 'styled-components';
+import styled from 'styled-components';
 
-interface IProps {
-  disabled: Boolean;
-  secondary: Boolean;
-  as: any;
-}
-type DefFunc = IProps & React.HTMLProps<any>;
-
-const But: StyledFunction<DefFunc> = styled.button;
-
-export const Button = But`
+export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
   padding: 0.7rem 2.5rem;
@@ -32,7 +23,7 @@ export const Button = But`
     background: gray;
   }
 
-  ${({ secondary }) =>
+  ${({ secondary: any }) =>
     secondary &&
     `
 		background: #001F3F;
