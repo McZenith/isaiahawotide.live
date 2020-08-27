@@ -5,22 +5,22 @@ import * as Yup from 'yup';
 import { Button, Input } from '../../../common';
 import { Error, Center, InputField } from './styles';
 
-export interface ContactFormProps {
-  setFieldValue: any;
-  isSubmitting: Boolean;
-  values: any;
-  errors: any;
-  touched: any;
-}
+// export interface ContactFormProps {
+//   setFieldValue: any;
+//   isSubmitting: Boolean;
+//   values: any;
+//   errors: any;
+//   touched: any;
+// }
 
-const ContactForm: React.SFC<ContactFormProps> = ({
+const ContactForm = ({
   setFieldValue,
   isSubmitting = true,
   values,
   errors,
   touched,
 }) => {
-  const submitForm = async (event: any) => {
+  const submitForm = async (event) => {
     event.preventDefault();
     if (
       values.name &&
@@ -102,7 +102,7 @@ const ContactForm: React.SFC<ContactFormProps> = ({
             component={Recaptcha}
             sitekey={'6LdazsMZAAAAAOWCbbwKvNVOjH3kUL_fH3KHIYAl'}
             name='recaptcha'
-            onChange={(value: any) => setFieldValue('recaptcha', value)}
+            onChange={(value) => setFieldValue('recaptcha', value)}
           />
           <ErrorMessage component={Error} name='recaptcha' />
         </InputField>
@@ -148,7 +148,7 @@ export default withFormik({
     { setSubmitting, resetForm, setFieldValue }
   ) => {
     try {
-      const encode = (data: any) => {
+      const encode = (data) => {
         return Object.keys(data)
           .map(
             (key) =>
