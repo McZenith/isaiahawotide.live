@@ -21,5 +21,5 @@
     "isolatedModules": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/landing/Contact/ContactForm/index.jsx", "components/common/Button/index.js", "components/landing/Projects/index.jsx", "components/theme/Header/Hamburger/styles.js", "components/theme/Header/NavbarLinks/styles.js", "components/theme/Header/Sidebar/styles.js", "components/theme/Header/styles.js", "components/theme/Header/NavbarLinks/index.jsx", "components/theme/Header/Sidebar/index.jsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/landing/Contact/ContactForm/index.jsx", "components/common/Button/index.js", "components/landing/Projects/index.jsx", "components/theme/Header/Hamburger/styles.js", "components/theme/Header/NavbarLinks/styles.js", "components/theme/Header/Sidebar/styles.js", "components/theme/Header/styles.js", "components/theme/Header/NavbarLinks/index.jsx", "components/theme/Header/Sidebar/index.jsx", "components/theme/Header/index.jsx"]
 }
