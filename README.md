@@ -1,49 +1,33 @@
-# TypeScript & Styled Components Next.js example
+# Web Developer portfolio website
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+This is my personal portfolio website build with GatsbyJS and a small ExpressJS server.
 
-## Deploy your own
+### Features
 
-Deploy the example using [Vercel](https://vercel.com):
+- React 16.x
+- Next framework
+- TypeScript
+- PWA (desktop & mobile)
+- Functional components with Recompose React Hooks
+- Frontend design by [@smakosh](https://github.com/smakosh/)
+- Amazing illustrations by [Undraw.co](https://undraw.co/)
+- Based On [Aaron Vandenberg](https://aaronvandenberg.nl/)
+- Contact form with Google reCAPTCHA
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components)
+### Prerequirements
 
-## How to use it?
+1. Latest [Node.js](https://nodejs.org/en/) version
+2. [Next](https://nextjs.org/)
 
-### Using `create-next-app`
+### How to install
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+1. The easiest way to get started is to clone the repository and cd into it the folder
 
-```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-app
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-app
-```
+2. Install NPM dependencies in the root folder and in the server folder: <br>
+   `npm install`
+3. Finally you start the app in the root folder by doing:
+4. `npm run dev`
 
-### Download manually
+### Preview
 
-Download the example:
-
-```bash
-curl https://codeload.github.com/vercel/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript-styled-components
-cd with-typescript-styled-components
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This is an amalgamation of the 2 existing examples:
-
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+![Website Aaron van den Berg](https://github.com/McZenith/isaiahawotide.live/blob/main/screenshot.png?raw=true)

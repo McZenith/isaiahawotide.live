@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import { Layout, SEO } from '../components/common';
+import { Intro, Skills, Contact, Projects } from '../components/landing';
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
-
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default () => (
+  <Layout>
+    <SEO />
+    <Intro />
+    <Projects />
+    <Skills />
+    <Contact />
+  </Layout>
+);
