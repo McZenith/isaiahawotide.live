@@ -11,7 +11,6 @@ export const Global = createGlobalStyle`
           src: local('Roboto'), local('Roboto-Regular'),
             url('./fonts/roboto-v18-latin-regular.eot?#iefix')
               format('embedded-opentype'),
-            url('./fonts/roboto-v18-latin-regular.woff2') format('woff2'),
             url('./fonts/roboto-v18-latin-regular.woff') format('woff'),
             url('./fonts/roboto-v18-latin-regular.ttf') format('truetype'),
             url('./fonts/roboto-v18-latin-regular.svg#Roboto') format('svg');
