@@ -16,10 +16,10 @@ export const data = {
     facebook: 'awotide.isaiah',
   },
   address: {
-    country: 'Nigeria',
+    country: 'London',
   },
   contact: {
-    email: 'awotideisaiah@yahoo.com',
+    email: 'isaiahawotide@gmail.com',
     phone: '+2348140386325',
   },
   foundingDate: '2020',
