@@ -17,7 +17,7 @@ export const Intro = () => (
           Contact me
         </Button>
         <Link
-          href='https://drive.google.com/file/d/12sTq3W6j-Wy9KhtKxDLFwcy7vs_qZVZp/view?usp=sharing'
+          href='https://drive.google.com/file/d/1SCX2wubXadBwM9neBEoE9n4w9gB6bsvz/view?usp=drive_link'
           target='_blank'
         >
           <Button style={{ marginLeft: '0.5em', background: '#001F3F' }}>
