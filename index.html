@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah Awotide — Senior Software Engineer</title>
+    <meta name="description"
+        content="Senior Full Stack Software Engineer with 5+ years at JP Morgan Chase. React, TypeScript, C#/.NET, Node.js. London, UK.">
+    <meta name="author" content="Isaiah Awotide">
+    <meta name="keywords"
+        content="software engineer, full stack developer, react, typescript, C#, .NET, JP Morgan, London">
+    <meta property="og:title" content="Isaiah Awotide — Senior Software Engineer">
+    <meta property="og:description"
+        content="Full Stack Engineer building production systems at JP Morgan Chase. React, TypeScript, C#, Node.js.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ═══ Noise overlay ═══ -->
+    <div class="noise"></div>
+
+    <!-- ═══ Navigation ═══ -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav__logo">
+            <span class="nav__logo-mark">IA</span>
+            <span class="nav__logo-text">isaiah<span class="accent">.</span>dev</span>
+        </a>
+        <div class="nav__links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact" class="btn btn--nav">Get in Touch</a>
+        </div>
+        <button class="nav__menu" id="navMenu" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ═══ Mobile Menu ═══ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#skills" onclick="closeMobile()">Skills</a>
+        <a href="#experience" onclick="closeMobile()">Experience</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ═══ Hero ═══ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__grid"></div>
+            <div class="hero__gradient"></div>
+            <div class="hero__orb hero__orb--1"></div>
+            <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge fade-up">
+                <span class="pulse"></span> Available for opportunities
+            </div>
+            <h1 class="hero__title fade-up" style="--delay:.1s">
+                I build <span class="hero__rotate">
+                    <span class="hero__word" id="heroWord">systems that scale</span>
+                </span>
+            </h1>
+            <p class="hero__subtitle fade-up" style="--delay:.2s">
+                Senior Software Engineer at <strong>JP Morgan Chase</strong> · London<br>
+                React · TypeScript · C#/.NET · Node.js · Real-Time Systems
+            </p>
+            <div class="hero__ctas fade-up" style="--delay:.3s">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <a href="#contact" class="btn btn--outline">Contact Me</a>
+            </div>
+            <div class="hero__stats fade-up" style="--delay:.4s">
+                <div class="stat">
+                    <span class="stat__number" data-count="5">0</span><span class="stat__suffix">+</span>
+                    <span class="stat__label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="90">0</span><span class="stat__suffix">%</span>
+                    <span class="stat__label">Perf. Improvement</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="3">0</span>
+                    <span class="stat__label">Open Source Projects</span>
+                </div>
+            </div>
+        </div>
+        <!-- Terminal animation -->
+        <div class="hero__terminal fade-up" style="--delay:.5s">
+            <div class="terminal">
+                <div class="terminal__header">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__title">isaiah@dev ~ </span>
+                </div>
+                <div class="terminal__body" id="terminalBody">
+                    <div class="terminal__line">
+                        <span class="terminal__prompt">$</span>
+                        <span class="terminal__cmd" id="terminalCmd"></span>
+                        <span class="terminal__cursor">▊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ About ═══ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag">01 — About</span>
+                <h2 class="section__title">Engineering at the intersection of <span class="accent">finance</span> and
+                    <span class="accent">technology</span></h2>
+            </div>
+            <div class="about__grid reveal">
+                <div class="about__text">
+                    <p>I'm a Senior Full Stack Software Engineer at <strong>JP Morgan Chase</strong> in London, where I
+                        build mission-critical financial systems that serve front-office traders and quantitative
+                        analysts.</p>
+                    <p>My work spans the entire stack — from building high-performance <strong>React/TypeScript</strong>
+                        interfaces for real-time trade monitoring, to architecting <strong>C#/.NET</strong> pricing
+                        engines and <strong>Node.js</strong> microservices that process millions of calculations daily.
+                    </p>
+                    <p>I recently led a complete platform migration from legacy WPF/WinForms to a modern web stack,
+                        achieving a <strong>90% reduction in pricing calculation time</strong> and a <strong>300%
+                            improvement in usability</strong>.</p>
+                    <p>Outside JP Morgan, I build production-grade systems like real-time analytics platforms and
+                        collaborative tools, always pushing the boundaries of what modern web technologies can achieve.
+                    </p>
+                </div>
+                <div class="about__highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">🏦</div>
+                        <h3>JP Morgan Chase</h3>
+                        <p>Senior Software Engineer</p>
+                        <span class="highlight-card__date">2021 – Present</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">☁️</div>
+                        <h3>AWS Certified</h3>
+                        <p>Cloud Solutions Architecture</p>
+                        <span class="highlight-card__date">Cloud Infrastructure</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">⚡</div>
+                        <h3>90% Faster</h3>
+                        <p>Platform performance gains</p>
+                        <span class="highlight-card__date">Legacy → Modern</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">🌍</div>
+                        <h3>London, UK</h3>
+                        <p>Open to hybrid / remote</p>
+                        <span class="highlight-card__date">Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Projects ═══ -->
+    <section class="section section--dark" id="projects">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag">02 — Projects</span>
+                <h2 class="section__title">Featured <span class="accent">work</span></h2>
+            </div>
+            <div class="projects__grid">
+
+                <!-- Project 1: FinDash -->
+                <div class="project-card reveal">
+                    <div class="project-card__preview project-card__preview--findash">
+                        <div class="project-card__overlay">
+                            <a href="https://github.com/mczenith/findash" class="btn btn--small" target="_blank">View on
+                                GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="tag">React 18</span><span class="tag">TypeScript</span><span
+                                class="tag">Vite</span><span class="tag">Recharts</span>
+                        </div>
+                        <h3 class="project-card__title">FinDash</h3>
+                        <p class="project-card__desc">Bloomberg-inspired real-time financial dashboard with animated
+                            ticker strips, live price matrix, interactive charts, and trade blotter. Dark terminal theme
+                            with glassmorphism.</p>
+                        <div class="project-card__meta">
+                            <span>Frontend Showcase</span>
+                            <span>10 Live Data Feeds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TradeAPI -->
+                <div class="project-card reveal">
+                    <div class="project-card__preview project-card__preview--tradeapi">
+                        <div class="project-card__overlay">
+                            <a href="https://github.com/mczenith/tradeapi" class="btn btn--small" target="_blank">View
+                                on GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="tag">C# .NET 10</span><span class="tag">Clean Architecture</span><span
+                                class="tag">GraphQL</span><span class="tag">EF Core</span>
+                        </div>
+                        <h3 class="project-card__title">TradeAPI</h3>
+                        <p class="project-card__desc">Production-grade trading REST & GraphQL API using Clean
+                            Architecture with CQRS (MediatR), FluentValidation, Swagger UI, and HotChocolate GraphQL
+                            with filtering/sorting. 11 unit tests.</p>
+                        <div class="project-card__meta">
+                            <span>Backend Showcase</span>
+                            <span>5-Layer Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: CollabBoard -->
+                <div class="project-card reveal">
+                    <div class="project-card__preview project-card__preview--collabboard">
+                        <div class="project-card__overlay">
+                            <a href="https://github.com/mczenith/collabboard" class="btn btn--small"
+                                target="_blank">View on GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="tag">TypeScript Monorepo</span><span class="tag">React</span><span
+                                class="tag">Express</span><span class="tag">Socket.IO</span>
+                        </div>
+                        <h3 class="project-card__title">CollabBoard</h3>
+                        <p class="project-card__desc">Real-time collaborative Kanban board with drag-and-drop, live user
+                            presence, Socket.IO events, and SQLite persistence. End-to-end TypeScript with shared type
+                            packages.</p>
+                        <div class="project-card__meta">
+                            <span>Full Stack Showcase</span>
+                            <span>Real-Time Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Skills ═══ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag">03 — Skills</span>
+                <h2 class="section__title">Technical <span class="accent">arsenal</span></h2>
+            </div>
+            <div class="skills__grid reveal">
+                <div class="skill-group">
+                    <h3 class="skill-group__title"><span class="skill-icon">◆</span> Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar"><span class="skill-bar__name">React / Next.js</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">TypeScript</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">React Native / Expo</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">CSS / TailwindCSS</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group__title"><span class="skill-icon">◆</span> Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar"><span class="skill-bar__name">C# / .NET Core</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">Node.js / Express</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">Python / FastAPI</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">GraphQL / REST</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group__title"><span class="skill-icon">◆</span> Infrastructure</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar"><span class="skill-bar__name">AWS (Certified)</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">Docker / CI-CD</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">SQL / NoSQL</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><span class="skill-bar__name">WebSockets / SignalR</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Experience Timeline ═══ -->
+    <section class="section section--dark" id="experience">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag">04 — Experience</span>
+                <h2 class="section__title">Career <span class="accent">timeline</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline__line"></div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__date">2024 – Present</span>
+                        <h3>Full Platform Migration Lead</h3>
+                        <p class="timeline__company">JP Morgan Chase · London</p>
+                        <p>Led end-to-end migration from WPF/WinForms to React/TypeScript. <strong>90% faster
+                                pricing</strong>, <strong>300% usability improvement</strong>. TDD with SOLID
+                            architecture throughout.</p>
+                        <div class="timeline__tags">
+                            <span class="tag tag--sm">React</span><span class="tag tag--sm">TypeScript</span><span
+                                class="tag tag--sm">Python</span><span class="tag tag--sm">C#</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__date">2023 – 2024</span>
+                        <h3>Trade Blotter & Messaging Systems</h3>
+                        <p class="timeline__company">JP Morgan Chase · London</p>
+                        <p>Built real-time trade monitoring with WebSocket streaming and OpenFin integration. Led Tibco
+                            → ActiveMQ migration achieving <strong>30% faster messaging</strong> and <strong>99.99%
+                                uptime</strong>.</p>
+                        <div class="timeline__tags">
+                            <span class="tag tag--sm">React</span><span class="tag tag--sm">Java</span><span
+                                class="tag tag--sm">WebSocket</span><span class="tag tag--sm">ActiveMQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__date">2021 – 2023</span>
+                        <h3>Equity Derivatives Pricing Engine</h3>
+                        <p class="timeline__company">JP Morgan Chase · London</p>
+                        <p>Developed pre-trade pricing systems with C#, React, and Python. Technical SME for EMEA
+                            region. Drove EU/UK PRIIPs regulatory compliance to <strong>100%</strong>.</p>
+                        <div class="timeline__tags">
+                            <span class="tag tag--sm">C#</span><span class="tag tag--sm">React</span><span
+                                class="tag tag--sm">Python</span><span class="tag tag--sm">WPF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Contact ═══ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact__inner reveal">
+                <span class="section__tag">05 — Contact</span>
+                <h2 class="contact__title">Let's build something <span class="accent">great</span> together</h2>
+                <p class="contact__desc">I'm currently open to new Senior / Lead Software Engineering opportunities in
+                    London (hybrid or remote). Let's connect.</p>
+                <div class="contact__links">
+                    <a href="mailto:isaiahawotide@gmail.com" class="btn btn--primary btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <polyline points="2,4 12,13 22,4"></polyline>
+                        </svg>
+                        isaiahawotide@gmail.com
+                    </a>
+                    <div class="contact__social">
+                        <a href="https://linkedin.com/in/awotideisaiah" target="_blank" class="social-link"
+                            title="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mczenith" target="_blank" class="social-link" title="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="footer">
+        <p>Designed & built by <strong>Isaiah Awotide</strong> · 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
